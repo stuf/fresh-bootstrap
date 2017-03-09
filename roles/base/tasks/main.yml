@@ -1,0 +1,66 @@
+---
+# Install core packages
+#
+# Core packages includes essential tools and support for mostly used programming languages,
+# as well as commonly used applications.
+- block:
+  - name: '[Brew] Base system install'
+    homebrew:
+      name: "{{ item }}"
+      state: latest
+    with_items:
+    - coreutils
+    - wget
+    - tmux
+    - git
+
+  - name: '[Brew] Programming languages'
+    homebrew:
+      name: "{{ item }}"
+      state: latest
+    with_items:
+    - elm
+    - nvm
+    - rbenv
+    - leiningen
+
+  - name: '[Cask] Base packages'
+    homebrew_cask:
+      name: "{{ item }}"
+      state: present
+    with_items:
+    - iterm2
+    - dashlane
+    - dropbox
+    - magicprefs
+    - adobe-creative-cloud
+    - visual-studio-code
+
+# Extra packages
+#
+# Non-essential but useful and/or commonly used applications and programs
+- block:
+  - name: '[Brew] Imagemagick with libs'
+    homebrew:
+      name: imagemagick
+      state: latest
+      install_options: with-liblqr,with-opencl,with-webp
+
+  - name: '[Cask] Extras'
+    homebrew_cask:
+      name: "{{ item }}"
+      state: present
+    with_items:
+    - vlc
+    - transmission
+    - spotify
+    - mac2imgur
+
+  - name: "[Cask] Social"
+    homebrew_cask:
+      name: "{{ item }}"
+      state: present
+    with_items:
+    - slack
+    - gitter
+    - discord
