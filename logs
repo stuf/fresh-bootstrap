@@ -1,0 +1,473 @@
+2017-03-09 15:10:51,825 p=31497 u=stefan.rimaila |  PLAY [Default install] *********************************************************
+2017-03-09 15:10:51,933 p=31497 u=stefan.rimaila |  TASK [setup] *******************************************************************
+2017-03-09 15:10:53,281 p=31497 u=stefan.rimaila |  ok: [localhost]
+2017-03-09 15:10:53,284 p=31497 u=stefan.rimaila |  TASK [base : [Brew] Base system install] ***************************************
+2017-03-09 15:11:06,114 p=31497 u=stefan.rimaila |  ok: [localhost] => (item=[u'coreutils', u'wget', u'tmux', u'git'])
+2017-03-09 15:11:06,116 p=31497 u=stefan.rimaila |  TASK [base : [Brew] Programming languages] *************************************
+2017-03-09 15:11:22,844 p=31497 u=stefan.rimaila |  ok: [localhost] => (item=[u'elm', u'nvm', u'rbenv', u'leiningen'])
+2017-03-09 15:11:22,848 p=31497 u=stefan.rimaila |  TASK [base : [Cask] Base packages] *********************************************
+2017-03-09 15:11:25,610 p=31497 u=stefan.rimaila |  ok: [localhost] => (item=iterm2)
+2017-03-09 15:11:27,712 p=31497 u=stefan.rimaila |  ok: [localhost] => (item=dashlane)
+2017-03-09 15:11:30,001 p=31497 u=stefan.rimaila |  ok: [localhost] => (item=dropbox)
+2017-03-09 15:11:31,696 p=31497 u=stefan.rimaila |  ok: [localhost] => (item=magicprefs)
+2017-03-09 15:11:33,921 p=31497 u=stefan.rimaila |  ok: [localhost] => (item=adobe-creative-cloud)
+2017-03-09 15:11:35,566 p=31497 u=stefan.rimaila |  ok: [localhost] => (item=visual-studio-code)
+2017-03-09 15:11:35,570 p=31497 u=stefan.rimaila |  TASK [base : [Brew] Imagemagick with libs] *************************************
+2017-03-09 15:11:39,872 p=31497 u=stefan.rimaila |  ok: [localhost]
+2017-03-09 15:11:39,876 p=31497 u=stefan.rimaila |  TASK [base : [Cask] Extras] ****************************************************
+2017-03-09 15:11:41,248 p=31497 u=stefan.rimaila |  ok: [localhost] => (item=vlc)
+2017-03-09 15:11:43,192 p=31497 u=stefan.rimaila |  ok: [localhost] => (item=transmission)
+2017-03-09 15:11:45,315 p=31497 u=stefan.rimaila |  ok: [localhost] => (item=spotify)
+2017-03-09 15:11:46,787 p=31497 u=stefan.rimaila |  ok: [localhost] => (item=mac2imgur)
+2017-03-09 15:11:46,792 p=31497 u=stefan.rimaila |  TASK [base : [Cask] Social] ****************************************************
+2017-03-09 15:11:48,206 p=31497 u=stefan.rimaila |  ok: [localhost] => (item=slack)
+2017-03-09 15:11:50,022 p=31497 u=stefan.rimaila |  ok: [localhost] => (item=gitter)
+2017-03-09 15:11:52,003 p=31497 u=stefan.rimaila |  ok: [localhost] => (item=discord)
+2017-03-09 15:11:52,009 p=31497 u=stefan.rimaila |  TASK [base : [VSCode] Install extensions] **************************************
+2017-03-09 15:11:53,100 p=31497 u=stefan.rimaila |  changed: [localhost] => (item=EditorConfig.EditorConfig)
+2017-03-09 15:11:53,960 p=31497 u=stefan.rimaila |  changed: [localhost] => (item=PKief.material-icon-theme)
+2017-03-09 15:11:55,024 p=31497 u=stefan.rimaila |  changed: [localhost] => (item=abadi199.elm-format)
+2017-03-09 15:11:55,890 p=31497 u=stefan.rimaila |  changed: [localhost] => (item=crisward.riot-tag)
+2017-03-09 15:11:56,640 p=31497 u=stefan.rimaila |  changed: [localhost] => (item=dbaeumer.vscode-eslint)
+2017-03-09 15:11:57,295 p=31497 u=stefan.rimaila |  changed: [localhost] => (item=djabraham.vscode-yaml-validation)
+2017-03-09 15:11:58,230 p=31497 u=stefan.rimaila |  changed: [localhost] => (item=flowtype.flow-for-vscode)
+2017-03-09 15:11:59,442 p=31497 u=stefan.rimaila |  changed: [localhost] => (item=gcazaciuc.vscode-flow-ide)
+2017-03-09 15:12:00,476 p=31497 u=stefan.rimaila |  changed: [localhost] => (item=haaaad.ansible)
+2017-03-09 15:12:01,319 p=31497 u=stefan.rimaila |  changed: [localhost] => (item=sbrink.elm)
+2017-03-09 15:12:02,185 p=31497 u=stefan.rimaila |  changed: [localhost] => (item=taichi.react-beautify)
+2017-03-09 15:12:02,982 p=31497 u=stefan.rimaila |  changed: [localhost] => (item=timonwong.ansible-autocomplete)
+2017-03-09 15:12:03,718 p=31497 u=stefan.rimaila |  changed: [localhost] => (item=zhuangtongfa.Material-theme)
+2017-03-09 15:12:03,722 p=31497 u=stefan.rimaila |  PLAY RECAP *********************************************************************
+2017-03-09 15:12:03,722 p=31497 u=stefan.rimaila |  localhost                  : ok=8    changed=1    unreachable=0    failed=0   
+2017-03-10 15:19:09,086 p=37181 u=stefan.rimaila |  ERROR! The vars/main.yml file for role 'base' must contain a dictionary of variables
+2017-03-10 15:19:42,318 p=37377 u=stefan.rimaila |  ERROR! You must specify a playbook file to run
+2017-03-10 15:19:45,822 p=37462 u=stefan.rimaila |  ERROR! The vars/main.yml file for role 'base' must contain a dictionary of variables
+2017-03-10 15:21:03,399 p=37682 u=stefan.rimaila |  PLAY [Default install] *********************************************************
+2017-03-10 15:21:03,526 p=37682 u=stefan.rimaila |  TASK [setup] *******************************************************************
+2017-03-10 15:21:04,747 p=37682 u=stefan.rimaila |  ok: [localhost]
+2017-03-10 15:21:04,749 p=37682 u=stefan.rimaila |  TASK [base : [Brew] Base system install] ***************************************
+2017-03-10 15:21:14,242 p=37682 u=stefan.rimaila |  ok: [localhost] => (item=[u'coreutils', u'wget', u'tmux', u'git'])
+2017-03-10 15:21:14,245 p=37682 u=stefan.rimaila |  TASK [base : [Brew] Programming languages] *************************************
+2017-03-10 15:21:46,429 p=37682 u=stefan.rimaila |  changed: [localhost] => (item=[u'elm', u'nvm', u'rbenv', u'leiningen', u'python3'])
+2017-03-10 15:21:46,432 p=37682 u=stefan.rimaila |  TASK [base : [Cask] Base packages] *********************************************
+2017-03-10 15:21:48,109 p=37682 u=stefan.rimaila |  ok: [localhost] => (item=iterm2)
+2017-03-10 15:21:49,403 p=37682 u=stefan.rimaila |  ok: [localhost] => (item=dashlane)
+2017-03-10 15:21:50,751 p=37682 u=stefan.rimaila |  ok: [localhost] => (item=dropbox)
+2017-03-10 15:21:52,249 p=37682 u=stefan.rimaila |  ok: [localhost] => (item=magicprefs)
+2017-03-10 15:21:53,800 p=37682 u=stefan.rimaila |  ok: [localhost] => (item=adobe-creative-cloud)
+2017-03-10 15:21:55,186 p=37682 u=stefan.rimaila |  ok: [localhost] => (item=visual-studio-code)
+2017-03-10 15:22:01,654 p=37682 u=stefan.rimaila |  changed: [localhost] => (item=sketch)
+2017-03-10 15:22:01,657 p=37682 u=stefan.rimaila |  TASK [base : [Brew] Imagemagick with libs] *************************************
+2017-03-10 15:22:04,776 p=37682 u=stefan.rimaila |  ok: [localhost]
+2017-03-10 15:22:04,781 p=37682 u=stefan.rimaila |  TASK [base : [Cask] Extras] ****************************************************
+2017-03-10 15:22:06,119 p=37682 u=stefan.rimaila |  ok: [localhost] => (item=vlc)
+2017-03-10 15:22:07,319 p=37682 u=stefan.rimaila |  ok: [localhost] => (item=transmission)
+2017-03-10 15:22:08,556 p=37682 u=stefan.rimaila |  ok: [localhost] => (item=spotify)
+2017-03-10 15:22:09,862 p=37682 u=stefan.rimaila |  ok: [localhost] => (item=mac2imgur)
+2017-03-10 15:22:09,865 p=37682 u=stefan.rimaila |  TASK [base : [Cask] Social] ****************************************************
+2017-03-10 15:22:11,274 p=37682 u=stefan.rimaila |  ok: [localhost] => (item=slack)
+2017-03-10 15:22:12,528 p=37682 u=stefan.rimaila |  ok: [localhost] => (item=gitter)
+2017-03-10 15:22:13,789 p=37682 u=stefan.rimaila |  ok: [localhost] => (item=discord)
+2017-03-10 15:22:13,792 p=37682 u=stefan.rimaila |  TASK [base : [VSCode] Install extensions] **************************************
+2017-03-10 15:22:14,800 p=37682 u=stefan.rimaila |  changed: [localhost] => (item=EditorConfig.EditorConfig)
+2017-03-10 15:22:15,572 p=37682 u=stefan.rimaila |  changed: [localhost] => (item=PKief.material-icon-theme)
+2017-03-10 15:22:16,353 p=37682 u=stefan.rimaila |  changed: [localhost] => (item=abadi199.elm-format)
+2017-03-10 15:22:17,150 p=37682 u=stefan.rimaila |  changed: [localhost] => (item=crisward.riot-tag)
+2017-03-10 15:22:17,946 p=37682 u=stefan.rimaila |  changed: [localhost] => (item=dbaeumer.vscode-eslint)
+2017-03-10 15:22:18,743 p=37682 u=stefan.rimaila |  changed: [localhost] => (item=djabraham.vscode-yaml-validation)
+2017-03-10 15:22:19,463 p=37682 u=stefan.rimaila |  changed: [localhost] => (item=flowtype.flow-for-vscode)
+2017-03-10 15:22:20,242 p=37682 u=stefan.rimaila |  changed: [localhost] => (item=gcazaciuc.vscode-flow-ide)
+2017-03-10 15:22:20,995 p=37682 u=stefan.rimaila |  changed: [localhost] => (item=haaaad.ansible)
+2017-03-10 15:22:21,721 p=37682 u=stefan.rimaila |  changed: [localhost] => (item=sbrink.elm)
+2017-03-10 15:22:22,534 p=37682 u=stefan.rimaila |  changed: [localhost] => (item=taichi.react-beautify)
+2017-03-10 15:22:23,332 p=37682 u=stefan.rimaila |  changed: [localhost] => (item=timonwong.ansible-autocomplete)
+2017-03-10 15:22:24,112 p=37682 u=stefan.rimaila |  changed: [localhost] => (item=zhuangtongfa.Material-theme)
+2017-03-10 15:22:24,118 p=37682 u=stefan.rimaila |  TASK [base : [nvm] Install node.js] ********************************************
+2017-03-10 15:22:24,217 p=37682 u=stefan.rimaila |  fatal: [localhost]: FAILED! => {"failed": true, "msg": "the field 'args' has an invalid value, which appears to include a variable that is undefined. The error was: 'node_version' is undefined\n\nThe error appears to have been in '/Users/stefan.rimaila/Code/Home/fresh-bootstrap/roles/base/tasks/coding.yml': line 19, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: '[nvm] Install node.js'\n  ^ here\n"}
+2017-03-10 15:22:24,219 p=37682 u=stefan.rimaila |  	to retry, use: --limit @/Users/stefan.rimaila/Code/Home/fresh-bootstrap/main.retry
+
+2017-03-10 15:22:24,220 p=37682 u=stefan.rimaila |  PLAY RECAP *********************************************************************
+2017-03-10 15:22:24,220 p=37682 u=stefan.rimaila |  localhost                  : ok=8    changed=3    unreachable=0    failed=1   
+2017-03-10 15:23:16,748 p=45709 u=stefan.rimaila |  ERROR! You must specify a playbook file to run
+2017-03-10 15:24:03,252 p=46469 u=stefan.rimaila |  PLAY [Default install] *********************************************************
+2017-03-10 15:24:03,356 p=46469 u=stefan.rimaila |  TASK [setup] *******************************************************************
+2017-03-10 15:24:04,514 p=46469 u=stefan.rimaila |  ok: [localhost]
+2017-03-10 15:24:04,516 p=46469 u=stefan.rimaila |  TASK [base : [Brew] Base system install] ***************************************
+2017-03-10 15:24:14,157 p=46469 u=stefan.rimaila |  ok: [localhost] => (item=[u'coreutils', u'wget', u'tmux', u'git'])
+2017-03-10 15:24:14,159 p=46469 u=stefan.rimaila |  TASK [base : [Brew] Programming languages] *************************************
+2017-03-10 15:24:26,610 p=46469 u=stefan.rimaila |  ok: [localhost] => (item=[u'elm', u'nvm', u'rbenv', u'leiningen', u'python3'])
+2017-03-10 15:24:26,613 p=46469 u=stefan.rimaila |  TASK [base : [Brew] Imagemagick with libs] *************************************
+2017-03-10 15:24:29,522 p=46469 u=stefan.rimaila |  ok: [localhost]
+2017-03-10 15:24:29,524 p=46469 u=stefan.rimaila |  TASK [base : [VSCode] Install extensions] **************************************
+2017-03-10 15:24:30,500 p=46469 u=stefan.rimaila |  changed: [localhost] => (item=EditorConfig.EditorConfig)
+2017-03-10 15:24:31,220 p=46469 u=stefan.rimaila |  changed: [localhost] => (item=PKief.material-icon-theme)
+2017-03-10 15:24:31,924 p=46469 u=stefan.rimaila |  changed: [localhost] => (item=abadi199.elm-format)
+2017-03-10 15:24:32,592 p=46469 u=stefan.rimaila |  changed: [localhost] => (item=crisward.riot-tag)
+2017-03-10 15:24:33,309 p=46469 u=stefan.rimaila |  changed: [localhost] => (item=dbaeumer.vscode-eslint)
+2017-03-10 15:24:34,045 p=46469 u=stefan.rimaila |  changed: [localhost] => (item=djabraham.vscode-yaml-validation)
+2017-03-10 15:24:35,141 p=46469 u=stefan.rimaila |  changed: [localhost] => (item=flowtype.flow-for-vscode)
+2017-03-10 15:24:35,945 p=46469 u=stefan.rimaila |  changed: [localhost] => (item=gcazaciuc.vscode-flow-ide)
+2017-03-10 15:24:36,845 p=46469 u=stefan.rimaila |  changed: [localhost] => (item=haaaad.ansible)
+2017-03-10 15:24:37,603 p=46469 u=stefan.rimaila |  changed: [localhost] => (item=sbrink.elm)
+2017-03-10 15:24:38,373 p=46469 u=stefan.rimaila |  changed: [localhost] => (item=taichi.react-beautify)
+2017-03-10 15:24:39,131 p=46469 u=stefan.rimaila |  changed: [localhost] => (item=timonwong.ansible-autocomplete)
+2017-03-10 15:24:40,101 p=46469 u=stefan.rimaila |  changed: [localhost] => (item=zhuangtongfa.Material-theme)
+2017-03-10 15:24:40,106 p=46469 u=stefan.rimaila |  TASK [base : [nvm] Install node.js] ********************************************
+2017-03-10 15:24:40,200 p=46469 u=stefan.rimaila |  fatal: [localhost]: FAILED! => {"failed": true, "msg": "the field 'args' has an invalid value, which appears to include a variable that is undefined. The error was: 'node_version' is undefined\n\nThe error appears to have been in '/Users/stefan.rimaila/Code/Home/fresh-bootstrap/roles/base/tasks/coding.yml': line 19, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: '[nvm] Install node.js'\n  ^ here\n"}
+2017-03-10 15:24:40,202 p=46469 u=stefan.rimaila |  	to retry, use: --limit @/Users/stefan.rimaila/Code/Home/fresh-bootstrap/main.retry
+
+2017-03-10 15:24:40,202 p=46469 u=stefan.rimaila |  PLAY RECAP *********************************************************************
+2017-03-10 15:24:40,202 p=46469 u=stefan.rimaila |  localhost                  : ok=5    changed=1    unreachable=0    failed=1   
+2017-03-10 15:25:22,579 p=51210 u=stefan.rimaila |  ERROR! Unexpected Exception: dictionary update sequence element #0 has length 1; 2 is required
+2017-03-10 15:25:22,579 p=51210 u=stefan.rimaila |  to see the full traceback, use -vvv
+2017-03-10 15:25:22,584 p=51210 u=stefan.rimaila |  the full traceback was:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/ansible-playbook", line 103, in <module>
+    exit_code = cli.run()
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/cli/playbook.py", line 132, in run
+    inventory = Inventory(loader=loader, variable_manager=variable_manager, host_list=self.options.inventory)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 98, in __init__
+    self.parse_inventory(host_list)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 165, in parse_inventory
+    group.vars = combine_vars(group.vars, self.get_group_variables(group.name))
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 555, in get_group_variables
+    self._vars_per_group[groupname] = self._get_group_variables(groupname, vault_password=vault_password)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 573, in _get_group_variables
+    vars = combine_vars(vars, self.get_group_vars(group))
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 775, in get_group_vars
+    return self._get_hostgroup_vars(host=None, group=group, new_pb_basedir=new_pb_basedir, return_results=return_results)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 839, in _get_hostgroup_vars
+    host_results = self._variable_manager.add_group_vars_file(base_path, self._loader)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/vars/__init__.py", line 619, in add_group_vars_file
+    data = self._load_inventory_file(path, loader)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/vars/__init__.py", line 577, in _load_inventory_file
+    rval.update(data)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+
+2017-03-10 15:25:26,968 p=51306 u=stefan.rimaila |  ERROR! Unexpected Exception: dictionary update sequence element #0 has length 1; 2 is required
+2017-03-10 15:25:26,968 p=51306 u=stefan.rimaila |  to see the full traceback, use -vvv
+2017-03-10 15:25:26,970 p=51306 u=stefan.rimaila |  the full traceback was:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/ansible-playbook", line 103, in <module>
+    exit_code = cli.run()
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/cli/playbook.py", line 132, in run
+    inventory = Inventory(loader=loader, variable_manager=variable_manager, host_list=self.options.inventory)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 98, in __init__
+    self.parse_inventory(host_list)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 165, in parse_inventory
+    group.vars = combine_vars(group.vars, self.get_group_variables(group.name))
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 555, in get_group_variables
+    self._vars_per_group[groupname] = self._get_group_variables(groupname, vault_password=vault_password)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 573, in _get_group_variables
+    vars = combine_vars(vars, self.get_group_vars(group))
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 775, in get_group_vars
+    return self._get_hostgroup_vars(host=None, group=group, new_pb_basedir=new_pb_basedir, return_results=return_results)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 839, in _get_hostgroup_vars
+    host_results = self._variable_manager.add_group_vars_file(base_path, self._loader)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/vars/__init__.py", line 619, in add_group_vars_file
+    data = self._load_inventory_file(path, loader)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/vars/__init__.py", line 577, in _load_inventory_file
+    rval.update(data)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+
+2017-03-10 15:25:39,080 p=51400 u=stefan.rimaila |  ERROR! Unexpected Exception: dictionary update sequence element #0 has length 1; 2 is required
+2017-03-10 15:25:39,080 p=51400 u=stefan.rimaila |  to see the full traceback, use -vvv
+2017-03-10 15:25:39,082 p=51400 u=stefan.rimaila |  the full traceback was:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/ansible-playbook", line 103, in <module>
+    exit_code = cli.run()
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/cli/playbook.py", line 132, in run
+    inventory = Inventory(loader=loader, variable_manager=variable_manager, host_list=self.options.inventory)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 98, in __init__
+    self.parse_inventory(host_list)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 165, in parse_inventory
+    group.vars = combine_vars(group.vars, self.get_group_variables(group.name))
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 555, in get_group_variables
+    self._vars_per_group[groupname] = self._get_group_variables(groupname, vault_password=vault_password)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 573, in _get_group_variables
+    vars = combine_vars(vars, self.get_group_vars(group))
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 775, in get_group_vars
+    return self._get_hostgroup_vars(host=None, group=group, new_pb_basedir=new_pb_basedir, return_results=return_results)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 839, in _get_hostgroup_vars
+    host_results = self._variable_manager.add_group_vars_file(base_path, self._loader)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/vars/__init__.py", line 619, in add_group_vars_file
+    data = self._load_inventory_file(path, loader)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/vars/__init__.py", line 577, in _load_inventory_file
+    rval.update(data)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+
+2017-03-10 15:25:43,090 p=51482 u=stefan.rimaila |  Using /Users/stefan.rimaila/Code/Home/fresh-bootstrap/ansible.cfg as config file
+2017-03-10 15:25:43,099 p=51482 u=stefan.rimaila |  ERROR! Unexpected Exception: dictionary update sequence element #0 has length 1; 2 is required
+2017-03-10 15:25:43,102 p=51482 u=stefan.rimaila |  the full traceback was:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/ansible-playbook", line 103, in <module>
+    exit_code = cli.run()
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/cli/playbook.py", line 132, in run
+    inventory = Inventory(loader=loader, variable_manager=variable_manager, host_list=self.options.inventory)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 98, in __init__
+    self.parse_inventory(host_list)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 165, in parse_inventory
+    group.vars = combine_vars(group.vars, self.get_group_variables(group.name))
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 555, in get_group_variables
+    self._vars_per_group[groupname] = self._get_group_variables(groupname, vault_password=vault_password)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 573, in _get_group_variables
+    vars = combine_vars(vars, self.get_group_vars(group))
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 775, in get_group_vars
+    return self._get_hostgroup_vars(host=None, group=group, new_pb_basedir=new_pb_basedir, return_results=return_results)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 839, in _get_hostgroup_vars
+    host_results = self._variable_manager.add_group_vars_file(base_path, self._loader)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/vars/__init__.py", line 619, in add_group_vars_file
+    data = self._load_inventory_file(path, loader)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/vars/__init__.py", line 577, in _load_inventory_file
+    rval.update(data)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+
+2017-03-10 15:26:07,990 p=51605 u=stefan.rimaila |  Using /Users/stefan.rimaila/Code/Home/fresh-bootstrap/ansible.cfg as config file
+2017-03-10 15:26:07,997 p=51605 u=stefan.rimaila |  ERROR! Unexpected Exception: dictionary update sequence element #0 has length 1; 2 is required
+2017-03-10 15:26:07,999 p=51605 u=stefan.rimaila |  the full traceback was:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/ansible-playbook", line 103, in <module>
+    exit_code = cli.run()
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/cli/playbook.py", line 132, in run
+    inventory = Inventory(loader=loader, variable_manager=variable_manager, host_list=self.options.inventory)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 98, in __init__
+    self.parse_inventory(host_list)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 165, in parse_inventory
+    group.vars = combine_vars(group.vars, self.get_group_variables(group.name))
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 555, in get_group_variables
+    self._vars_per_group[groupname] = self._get_group_variables(groupname, vault_password=vault_password)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 573, in _get_group_variables
+    vars = combine_vars(vars, self.get_group_vars(group))
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 775, in get_group_vars
+    return self._get_hostgroup_vars(host=None, group=group, new_pb_basedir=new_pb_basedir, return_results=return_results)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 839, in _get_hostgroup_vars
+    host_results = self._variable_manager.add_group_vars_file(base_path, self._loader)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/vars/__init__.py", line 619, in add_group_vars_file
+    data = self._load_inventory_file(path, loader)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/vars/__init__.py", line 577, in _load_inventory_file
+    rval.update(data)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+
+2017-03-10 15:30:47,447 p=52073 u=stefan.rimaila |  ERROR! Unexpected Exception: dictionary update sequence element #0 has length 1; 2 is required
+2017-03-10 15:30:47,447 p=52073 u=stefan.rimaila |  to see the full traceback, use -vvv
+2017-03-10 15:30:47,454 p=52073 u=stefan.rimaila |  the full traceback was:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/ansible-playbook", line 103, in <module>
+    exit_code = cli.run()
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/cli/playbook.py", line 132, in run
+    inventory = Inventory(loader=loader, variable_manager=variable_manager, host_list=self.options.inventory)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 98, in __init__
+    self.parse_inventory(host_list)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 165, in parse_inventory
+    group.vars = combine_vars(group.vars, self.get_group_variables(group.name))
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 555, in get_group_variables
+    self._vars_per_group[groupname] = self._get_group_variables(groupname, vault_password=vault_password)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 573, in _get_group_variables
+    vars = combine_vars(vars, self.get_group_vars(group))
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 775, in get_group_vars
+    return self._get_hostgroup_vars(host=None, group=group, new_pb_basedir=new_pb_basedir, return_results=return_results)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 839, in _get_hostgroup_vars
+    host_results = self._variable_manager.add_group_vars_file(base_path, self._loader)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/vars/__init__.py", line 619, in add_group_vars_file
+    data = self._load_inventory_file(path, loader)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/vars/__init__.py", line 577, in _load_inventory_file
+    rval.update(data)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+
+2017-03-10 15:30:53,760 p=52253 u=stefan.rimaila |  ERROR! Unexpected Exception: dictionary update sequence element #0 has length 1; 2 is required
+2017-03-10 15:30:53,761 p=52253 u=stefan.rimaila |  to see the full traceback, use -vvv
+2017-03-10 15:30:53,762 p=52253 u=stefan.rimaila |  the full traceback was:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/ansible-playbook", line 103, in <module>
+    exit_code = cli.run()
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/cli/playbook.py", line 132, in run
+    inventory = Inventory(loader=loader, variable_manager=variable_manager, host_list=self.options.inventory)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 98, in __init__
+    self.parse_inventory(host_list)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 165, in parse_inventory
+    group.vars = combine_vars(group.vars, self.get_group_variables(group.name))
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 555, in get_group_variables
+    self._vars_per_group[groupname] = self._get_group_variables(groupname, vault_password=vault_password)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 573, in _get_group_variables
+    vars = combine_vars(vars, self.get_group_vars(group))
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 775, in get_group_vars
+    return self._get_hostgroup_vars(host=None, group=group, new_pb_basedir=new_pb_basedir, return_results=return_results)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 839, in _get_hostgroup_vars
+    host_results = self._variable_manager.add_group_vars_file(base_path, self._loader)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/vars/__init__.py", line 619, in add_group_vars_file
+    data = self._load_inventory_file(path, loader)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/vars/__init__.py", line 577, in _load_inventory_file
+    rval.update(data)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+
+2017-03-10 15:30:57,188 p=52334 u=stefan.rimaila |  Using /Users/stefan.rimaila/Code/Home/fresh-bootstrap/ansible.cfg as config file
+2017-03-10 15:30:57,195 p=52334 u=stefan.rimaila |  ERROR! Unexpected Exception: dictionary update sequence element #0 has length 1; 2 is required
+2017-03-10 15:30:57,198 p=52334 u=stefan.rimaila |  the full traceback was:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/ansible-playbook", line 103, in <module>
+    exit_code = cli.run()
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/cli/playbook.py", line 132, in run
+    inventory = Inventory(loader=loader, variable_manager=variable_manager, host_list=self.options.inventory)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 98, in __init__
+    self.parse_inventory(host_list)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 165, in parse_inventory
+    group.vars = combine_vars(group.vars, self.get_group_variables(group.name))
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 555, in get_group_variables
+    self._vars_per_group[groupname] = self._get_group_variables(groupname, vault_password=vault_password)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 573, in _get_group_variables
+    vars = combine_vars(vars, self.get_group_vars(group))
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 775, in get_group_vars
+    return self._get_hostgroup_vars(host=None, group=group, new_pb_basedir=new_pb_basedir, return_results=return_results)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 839, in _get_hostgroup_vars
+    host_results = self._variable_manager.add_group_vars_file(base_path, self._loader)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/vars/__init__.py", line 619, in add_group_vars_file
+    data = self._load_inventory_file(path, loader)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/vars/__init__.py", line 577, in _load_inventory_file
+    rval.update(data)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+
+2017-03-10 15:31:39,639 p=52491 u=stefan.rimaila |  Using /Users/stefan.rimaila/Code/Home/fresh-bootstrap/ansible.cfg as config file
+2017-03-10 15:31:39,645 p=52491 u=stefan.rimaila |  ERROR! Unexpected Exception: dictionary update sequence element #0 has length 1; 2 is required
+2017-03-10 15:31:39,648 p=52491 u=stefan.rimaila |  the full traceback was:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/ansible-playbook", line 103, in <module>
+    exit_code = cli.run()
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/cli/playbook.py", line 132, in run
+    inventory = Inventory(loader=loader, variable_manager=variable_manager, host_list=self.options.inventory)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 98, in __init__
+    self.parse_inventory(host_list)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 165, in parse_inventory
+    group.vars = combine_vars(group.vars, self.get_group_variables(group.name))
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 555, in get_group_variables
+    self._vars_per_group[groupname] = self._get_group_variables(groupname, vault_password=vault_password)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 573, in _get_group_variables
+    vars = combine_vars(vars, self.get_group_vars(group))
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 775, in get_group_vars
+    return self._get_hostgroup_vars(host=None, group=group, new_pb_basedir=new_pb_basedir, return_results=return_results)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 839, in _get_hostgroup_vars
+    host_results = self._variable_manager.add_group_vars_file(base_path, self._loader)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/vars/__init__.py", line 619, in add_group_vars_file
+    data = self._load_inventory_file(path, loader)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/vars/__init__.py", line 577, in _load_inventory_file
+    rval.update(data)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+
+2017-03-10 15:33:44,781 p=52711 u=stefan.rimaila |  Using /Users/stefan.rimaila/Code/Home/fresh-bootstrap/ansible.cfg as config file
+2017-03-10 15:33:44,792 p=52711 u=stefan.rimaila |  ERROR! Unexpected Exception: dictionary update sequence element #0 has length 1; 2 is required
+2017-03-10 15:33:44,798 p=52711 u=stefan.rimaila |  the full traceback was:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/ansible-playbook", line 103, in <module>
+    exit_code = cli.run()
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/cli/playbook.py", line 132, in run
+    inventory = Inventory(loader=loader, variable_manager=variable_manager, host_list=self.options.inventory)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 98, in __init__
+    self.parse_inventory(host_list)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 165, in parse_inventory
+    group.vars = combine_vars(group.vars, self.get_group_variables(group.name))
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 555, in get_group_variables
+    self._vars_per_group[groupname] = self._get_group_variables(groupname, vault_password=vault_password)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 573, in _get_group_variables
+    vars = combine_vars(vars, self.get_group_vars(group))
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 775, in get_group_vars
+    return self._get_hostgroup_vars(host=None, group=group, new_pb_basedir=new_pb_basedir, return_results=return_results)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 839, in _get_hostgroup_vars
+    host_results = self._variable_manager.add_group_vars_file(base_path, self._loader)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/vars/__init__.py", line 619, in add_group_vars_file
+    data = self._load_inventory_file(path, loader)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/vars/__init__.py", line 577, in _load_inventory_file
+    rval.update(data)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+
+2017-03-10 15:33:57,653 p=52806 u=stefan.rimaila |  Using /Users/stefan.rimaila/Code/Home/fresh-bootstrap/ansible.cfg as config file
+2017-03-10 15:33:57,750 p=52806 u=stefan.rimaila |  statically included: /Users/stefan.rimaila/Code/Home/fresh-bootstrap/roles/base/tasks/coding.yml
+2017-03-10 15:33:58,060 p=52806 u=stefan.rimaila |  PLAYBOOK: main.yml *************************************************************
+2017-03-10 15:33:58,061 p=52806 u=stefan.rimaila |  1 plays in main.yml
+2017-03-10 15:33:58,063 p=52806 u=stefan.rimaila |  PLAY [Default install] *********************************************************
+2017-03-10 15:33:58,173 p=52806 u=stefan.rimaila |  TASK [setup] *******************************************************************
+2017-03-10 15:33:58,435 p=52806 u=stefan.rimaila |   [ERROR]: User interrupted execution
+
+2017-03-10 15:35:06,189 p=52944 u=stefan.rimaila |  Using /Users/stefan.rimaila/Code/Home/fresh-bootstrap/ansible.cfg as config file
+2017-03-10 15:35:06,199 p=52944 u=stefan.rimaila |  ERROR! Unexpected Exception: dictionary update sequence element #0 has length 1; 2 is required
+2017-03-10 15:35:06,203 p=52944 u=stefan.rimaila |  the full traceback was:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/ansible-playbook", line 103, in <module>
+    exit_code = cli.run()
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/cli/playbook.py", line 132, in run
+    inventory = Inventory(loader=loader, variable_manager=variable_manager, host_list=self.options.inventory)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 98, in __init__
+    self.parse_inventory(host_list)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 165, in parse_inventory
+    group.vars = combine_vars(group.vars, self.get_group_variables(group.name))
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 555, in get_group_variables
+    self._vars_per_group[groupname] = self._get_group_variables(groupname, vault_password=vault_password)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 573, in _get_group_variables
+    vars = combine_vars(vars, self.get_group_vars(group))
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 775, in get_group_vars
+    return self._get_hostgroup_vars(host=None, group=group, new_pb_basedir=new_pb_basedir, return_results=return_results)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/inventory/__init__.py", line 839, in _get_hostgroup_vars
+    host_results = self._variable_manager.add_group_vars_file(base_path, self._loader)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/vars/__init__.py", line 619, in add_group_vars_file
+    data = self._load_inventory_file(path, loader)
+  File "/usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/vars/__init__.py", line 577, in _load_inventory_file
+    rval.update(data)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+
+2017-03-10 15:35:13,304 p=53046 u=stefan.rimaila |  Using /Users/stefan.rimaila/Code/Home/fresh-bootstrap/ansible.cfg as config file
+2017-03-10 15:35:13,391 p=53046 u=stefan.rimaila |  statically included: /Users/stefan.rimaila/Code/Home/fresh-bootstrap/roles/base/tasks/coding.yml
+2017-03-10 15:35:13,583 p=53046 u=stefan.rimaila |   [ERROR]: User interrupted execution
+
+2017-03-10 15:35:17,180 p=53125 u=stefan.rimaila |  Using /Users/stefan.rimaila/Code/Home/fresh-bootstrap/ansible.cfg as config file
+2017-03-10 15:35:17,255 p=53125 u=stefan.rimaila |  statically included: /Users/stefan.rimaila/Code/Home/fresh-bootstrap/roles/base/tasks/coding.yml
+2017-03-10 15:35:17,555 p=53125 u=stefan.rimaila |  PLAYBOOK: main.yml *************************************************************
+2017-03-10 15:35:17,555 p=53125 u=stefan.rimaila |  1 plays in main.yml
+2017-03-10 15:35:17,557 p=53125 u=stefan.rimaila |  PLAY [Default install] *********************************************************
+2017-03-10 15:35:17,669 p=53125 u=stefan.rimaila |  TASK [setup] *******************************************************************
+2017-03-10 15:35:17,953 p=53125 u=stefan.rimaila |  Using module file /usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/modules/core/system/setup.py
+2017-03-10 15:35:18,935 p=53125 u=stefan.rimaila |  ok: [localhost]
+2017-03-10 15:35:18,937 p=53125 u=stefan.rimaila |  TASK [base : [Brew] Base system install] ***************************************
+2017-03-10 15:35:18,937 p=53125 u=stefan.rimaila |  task path: /Users/stefan.rimaila/Code/Home/fresh-bootstrap/roles/base/tasks/main.yml:6
+2017-03-10 15:35:19,146 p=53125 u=stefan.rimaila |  Using module file /usr/local/Cellar/ansible/2.2.1.0_1/libexec/lib/python2.7/site-packages/ansible/modules/extras/packaging/os/homebrew.py
+2017-03-10 15:35:23,522 p=53125 u=stefan.rimaila |   [ERROR]: User interrupted execution
+
+2017-03-10 15:35:26,176 p=53993 u=stefan.rimaila |  PLAY [Default install] *********************************************************
+2017-03-10 15:35:26,258 p=53993 u=stefan.rimaila |  TASK [setup] *******************************************************************
+2017-03-10 15:35:27,011 p=53993 u=stefan.rimaila |  ok: [localhost]
+2017-03-10 15:35:27,013 p=53993 u=stefan.rimaila |  TASK [base : [Brew] Base system install] ***************************************
+2017-03-10 15:35:38,082 p=53993 u=stefan.rimaila |  ok: [localhost] => (item=[u'coreutils', u'wget', u'tmux', u'git'])
+2017-03-10 15:35:38,085 p=53993 u=stefan.rimaila |  TASK [base : [Brew] Programming languages] *************************************
+2017-03-10 15:35:51,362 p=53993 u=stefan.rimaila |  ok: [localhost] => (item=[u'elm', u'nvm', u'rbenv', u'leiningen', u'python3'])
+2017-03-10 15:35:51,365 p=53993 u=stefan.rimaila |  TASK [base : [Brew] Imagemagick with libs] *************************************
+2017-03-10 15:35:55,028 p=53993 u=stefan.rimaila |  ok: [localhost]
+2017-03-10 15:35:55,030 p=53993 u=stefan.rimaila |  TASK [base : [Brew] Extras] ****************************************************
+2017-03-10 15:36:04,584 p=53993 u=stefan.rimaila |  changed: [localhost] => (item=[u'youtube-dl'])
+2017-03-10 15:36:04,590 p=53993 u=stefan.rimaila |  TASK [base : [VSCode] Install extensions] **************************************
+2017-03-10 15:36:05,873 p=53993 u=stefan.rimaila |  changed: [localhost] => (item=EditorConfig.EditorConfig)
+2017-03-10 15:36:06,758 p=53993 u=stefan.rimaila |  changed: [localhost] => (item=PKief.material-icon-theme)
+2017-03-10 15:36:07,615 p=53993 u=stefan.rimaila |  changed: [localhost] => (item=abadi199.elm-format)
+2017-03-10 15:36:08,541 p=53993 u=stefan.rimaila |  changed: [localhost] => (item=crisward.riot-tag)
+2017-03-10 15:36:09,434 p=53993 u=stefan.rimaila |  changed: [localhost] => (item=dbaeumer.vscode-eslint)
+2017-03-10 15:36:10,242 p=53993 u=stefan.rimaila |  changed: [localhost] => (item=djabraham.vscode-yaml-validation)
+2017-03-10 15:36:11,120 p=53993 u=stefan.rimaila |  changed: [localhost] => (item=flowtype.flow-for-vscode)
+2017-03-10 15:36:11,891 p=53993 u=stefan.rimaila |  changed: [localhost] => (item=gcazaciuc.vscode-flow-ide)
+2017-03-10 15:36:12,714 p=53993 u=stefan.rimaila |  changed: [localhost] => (item=haaaad.ansible)
+2017-03-10 15:36:13,512 p=53993 u=stefan.rimaila |  changed: [localhost] => (item=sbrink.elm)
+2017-03-10 15:36:14,499 p=53993 u=stefan.rimaila |  changed: [localhost] => (item=taichi.react-beautify)
+2017-03-10 15:36:15,723 p=53993 u=stefan.rimaila |  changed: [localhost] => (item=timonwong.ansible-autocomplete)
+2017-03-10 15:36:16,825 p=53993 u=stefan.rimaila |  changed: [localhost] => (item=zhuangtongfa.Material-theme)
+2017-03-10 15:36:16,830 p=53993 u=stefan.rimaila |  TASK [base : [nvm] Install node.js] ********************************************
+2017-03-10 15:36:17,331 p=53993 u=stefan.rimaila |  fatal: [localhost]: FAILED! => {"changed": true, "cmd": "nvm install 7.7.1", "delta": "0:00:00.010600", "end": "2017-03-10 15:36:17.305083", "failed": true, "rc": 127, "start": "2017-03-10 15:36:17.294483", "stderr": "/bin/sh: nvm: command not found", "stdout": "", "stdout_lines": [], "warnings": []}
+2017-03-10 15:36:17,334 p=53993 u=stefan.rimaila |  	to retry, use: --limit @/Users/stefan.rimaila/Code/Home/fresh-bootstrap/main.retry
+
+2017-03-10 15:36:17,334 p=53993 u=stefan.rimaila |  PLAY RECAP *********************************************************************
+2017-03-10 15:36:17,334 p=53993 u=stefan.rimaila |  localhost                  : ok=6    changed=2    unreachable=0    failed=1   

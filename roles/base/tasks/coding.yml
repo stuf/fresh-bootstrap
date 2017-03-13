@@ -1,0 +1,23 @@
+---
+- name: "[VSCode] Install extensions"
+  shell: code --install-extension {{ item }}
+  with_items:
+  - EditorConfig.EditorConfig
+  - PKief.material-icon-theme
+  - abadi199.elm-format
+  - crisward.riot-tag
+  - dbaeumer.vscode-eslint
+  - djabraham.vscode-yaml-validation
+  - flowtype.flow-for-vscode
+  - gcazaciuc.vscode-flow-ide
+  - haaaad.ansible
+  - sbrink.elm
+  - taichi.react-beautify
+  - timonwong.ansible-autocomplete
+  - zhuangtongfa.Material-theme
+
+- name: "[nvm] Install node.js"
+  shell: nvm install {{ node_version }}
+
+- name: "[rbenv] Install Ruby"
+  shell: rbenv install {{ ruby_version }}
