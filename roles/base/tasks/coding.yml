@@ -15,9 +15,3 @@
   - taichi.react-beautify
   - timonwong.ansible-autocomplete
   - zhuangtongfa.Material-theme
-
-- name: "[nvm] Install node.js"
-  shell: nvm install {{ node_version }}
-
-- name: "[rbenv] Install Ruby"
-  shell: rbenv install {{ ruby_version }}

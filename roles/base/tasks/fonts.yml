@@ -1,0 +1,23 @@
+---
+- name: "[Fonts] Tap homebrew cask"
+  homebrew_tap:
+    name: caskroom/fonts
+    state: present
+
+- name: "[Fonts] Install fonts"
+  homebrew_cask:
+    name: "font-{{ item }}"
+    state: present
+  with_items:
+  - overpass
+  - iosevka
+  - open-sans
+  - open-sans-condensed
+  - ubuntu
+  - fantasque-sans-mono
+  - pt-mono
+  - pt-sans
+  - roboto
+  - droid-sans
+  - droid-sans-mono
+  - lobster

@@ -1,4 +1,8 @@
 ---
+- name: "[Brew] Update"
+  homebrew:
+    update_homebrew: yes
+
 # Install core packages
 #
 # Core packages includes essential tools and support for mostly used programming languages,
@@ -12,6 +16,8 @@
   - wget
   - tmux
   - git
+  - p7zip
+  - unrar
 
 - name: "[Brew] Programming languages"
   homebrew:
@@ -23,6 +29,15 @@
   - rbenv
   - leiningen
   - python3
+  - haskell-stack
+
+- name: "[Brew] System"
+  homebrew:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+  - osquery
+  - htop
 
 # Extra packages
 #
@@ -33,12 +48,11 @@
     state: latest
     install_options: with-liblqr,with-opencl,with-webp
 
-- name: "[Brew] Extras"
-  homebrew:
-    name: "{{ item }}"
-    state: latest
-  with_items:
-  - youtube-dl
+- name: "[Extras] Tasks"
+  include: extras.yml
 
 - name: "[Coding] Tasks"
   include: coding.yml
+
+- name: "[Fonts] Tasks"
+  include: fonts.yml
